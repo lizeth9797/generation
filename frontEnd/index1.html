@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/img/ojos.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <title>Cafetería</title>
+    <style>
+        section{
+            background-color: gold;
+        }
+
+        .ordenada{
+            background-color: aqua;
+        }
+
+        #desordenada{
+            background-color:blueviolet;
+        }
+
+        .tab1{
+            background-color:brown;
+        }
+
+        .tab2{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CINE</h1>
+        <nav>
+            <a href="">Nosotros</a>
+            <a href="./formExample.html">Menú</a>
+            <a href="./form.html">Reservaciones</a>
+        </nav>
+    </header>
+    <div class="saludo">
+        <h1><em>soy un 'em' dentro de un h1 <strong>soy un strong dentro de un 'em'</strong></em></h1>
+        <h1><strong>soy un strong dentro de un 'em'</strong></h1>
+        <div><h5><a href=""><h1><strong>HOLA</strong></h1></a></h5></div>
+    </div>
+    
+    <section>
+        <img width="250px" src="https://media.istockphoto.com/id/1177900338/es/foto/taza-de-espresso-con-granos-de-caf%C3%A9.jpg?s=612x612&w=0&k=20&c=kK3bovtRdJjfHGAt7LX3FxgeRRRE762kOVBcAHpgdp0=" alt="">
+        <img width="150px" height="150px" src="https://mott.pe/noticias/wp-content/uploads/2016/12/El-porqu%C3%A9-Starbucks-le-dice-%E2%80%9Ctall%E2%80%9D-y-%E2%80%9Cgrande%E2%80%9D-a-su-vasos-peque%C3%B1os-caf%C3%A9.gif" alt="">
+        <img width="250px" src="https://img.freepik.com/foto-gratis/cafe-sabroso-taza-blanca_1232-412.jpg" alt="">
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15050.504928286391!2d-99.2067102!3d19.4285489!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201f60a8f816b%3A0xca7e9b8e9149aac2!2sGoogle%20Mexico%20City!5e0!3m2!1ses-419!2smx!4v1705961277369!5m2!1ses-419!2smx" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kbegkFoKvUM?si=SP1pQPDcAEq4lTvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+        <a class="aVideo" href="">Nuevo video</a>
+
+       
+
+        <section>
+        <h1>Lista Ordenada</h1>
+        <div class="ordenada">
+            <ol>
+                <li>cosa1</li>
+                <li>cosa2</li>
+                <li>cosa3</li>
+            </ol>
+        </div>
+
+        <h1>Lista Desordenada</h1>
+        <div id="desordenada">
+            <ul>
+                <li>cosa1</li>
+                <li>cosa2</li>
+                <li>cosa3</li>
+            </ul>
+        </div>
+    </section>
+        
+    <aside>
+        <dl>
+            <dt>cosa1</dt>
+            <dt>cosa2</dt>
+            <dt>cosa3</dt>
+            <dd>cosa4</dd>
+        </dl>
+    </aside>
+
+    <h5>linea horizontal:</h5>
+    <hr>
+
+    <article>
+        <h1>Tabla Coches</h1>
+        <table class="tab1">
+            <thead>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Precio</th>
+                    <th>Velocidad</th>
+                    <th>Color</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>tesla</td>
+                    <td>500</td>
+                    <td>250km/h</td>
+                    <td>Blanco</td>
+                </tr>
+                <tr>
+                    <td>bocho</td>
+                    <td>200</td>
+                    <td>100km/h</td>
+                    <td>Negro</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>Tabla Alumnos</h1>
+        <table class="tab2">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Genero</th>
+                    <th>Escuela</th>
+                    <th>Hobby</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jesus</td>
+                    <td>13</td>
+                    <td>M</td>
+                    <td>Simon B</td>
+                    <td>Ballet</td>
+                </tr>
+                <tr>
+                    <td>Adriana</td>
+                    <td>16</td>
+                    <td>F</td>
+                    <td>Americano</td>
+                    <td>Natación</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <section>
+        <table border="1">
+            <caption>
+                <tr>
+                    <td rowspan="2" colspan="2">Celdas a1,a2,b1 y b2 unidas</td>
+                    <td>celda c1</td>
+                </tr>
+                <tr>
+                    <td>celda c2</td>
+                </tr>
+
+                <tr>
+                    <td>celda a3</td>
+                    <td>celda b3</td>
+                    <td>celda c3</td>
+                </tr>
+            </caption>
+        </table>
+    </section>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eos, facilis autem obcaecati fugiat ipsam? Officiis dolorem fugiat atque obcaecati repudiandae, earum ratione, in, ea vel facilis blanditiis quis necessitatibus!</p>
+    </div>
+    
+
+    <div class="pseudo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, rem ducimus necessitatibus vitae iure repellendus itaque minus molestias optio, quae tenetur exercitationem possimus at! Accusamus a quos sit alias voluptate!</p>
+    </div>
+    <footer style="background-color: black; color:white;">
+        <h3>Síguenos en nuestras redes sociales</h3>
+        <a href="https://www.instagram.com/"><img width="25px" src="./src/img/instagram.png" alt=""></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINE-POLIS</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .grid-container >*{
+            text-align: center;
+            border-radius: 15px;
+            padding: 15px;
+        }
+        .header{
+            grid-area: header;
+            color: white;
+        }
+        .navbar{
+            grid-area: navbar;
+        }
+        .slide{
+            grid-area: slide;
+            background-color: #AC87C5;
+            font-size: 8px;
+        }
+
+        .sidebar{
+            grid-area: sidebar;
+            background-color: #756AB6;
+        }
+        .article{
+            grid-area: article;
+            background-color: #E0AED0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .dulceria{
+            background-color: red;
+        }
+        .cartelera{
+            margin-left: 100px;
+        }
+        .precios{
+            background-color: blue;
+        }
+        .catalogo{
+            grid-area: catalogo;
+            background-color: red;
+        }
+
+        .fondo{
+            background-image: url(https://difusoribero.files.wordpress.com/2021/07/salacine.jpg);
+            grid-area:fondo;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: #756AB6;
+        }
+        img{
+            float:right
+
+        }
+
+        /*Tamaño Telefono*/
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            grid-template-areas: 
+            "header"
+            "navbar"
+            "slide" 
+            "sidebar"
+            "article"
+            "footer"
+        ;
+        }
+
+        /*@media(min-width:768px){
+            .grid-container{
+                grid-template-columns: auto;
+                grid-template-areas: 
+                "header  header"
+                "navbar navbar"
+                "slide slide"
+                "sidebar article"
+                "footer  footer"
+                ;
+            }
+        }*/
+
+        @media(min-width:900px){
+            .grid-container{
+                grid-template-columns: auto;
+                grid-template-areas: 
+                "fondo fondo fondo fondo"
+                "header  header header header"
+                "navbar navbar navbar navbar"
+                "catalogo catalogo catalogo catalogo"
+                "slide slide slide article"
+                "sidebar sidebar  sidebar article"
+                "footer  footer footer footer"
+                ;
+            }
+        }
+
+    </style>
+</head>
+<body class="grid-container">
+    <div class="fondo">
+    <header class="header">CINE-POLIS</header>
+    <nav class="navbar">
+        <div class="navegacion">
+            <a href="#Peliculas">Películas</a>
+            <a href="#Precios">Precios</a>
+            <a href="#Dulceria">Dulcería</a>
+            <a href="#Ubicacion">Ubicación</a>
+        </div>
+    </nav>
+    </div>
+
+    <div class="catalogo">
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/WRrCVyT09ow?si=__yqDa_DMrLVtkUj" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/2WmsMmEkmfQ?si=UUdpFfNGQrAQfL1w" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/RI7e1IksKEQ?si=fbHjOkoO9EGCaiWD" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </tr>
+    </div>
+   
+    <div class="slide">
+        <h2>Cartelera</h2>
+            <table border="1" class="cartelera">
+                <thead>
+                    <tr class="encabezados">
+                        <th>Película</th>
+                        <th>Género</th>
+                        <th>Clasificación</th>
+                        <th>Idioma</th>
+                        <th>Horario</th>
+                        <th>Trailer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Volver al futuro</td>
+                        <td>Ciencia Ficción</td>
+                        <td>B</td>
+                        <td>Inglés</td>
+                        <td>
+                            <ul>
+                                11:00am <br>
+                                1:00pm <br> 
+                                4:00pm <br>
+                            </ul>
+                        </td>
+                        <td>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Soy leyenda</td>
+                        <td>Ciencia Ficción</td>
+                        <td>B</td>
+                        <td>Inglés</td>
+                        <td>
+                            <ul>
+                                11:00am <br>
+                                1:00pm <br> 
+                                4:00pm <br>
+                            </ul>
+                        </td>
+                        <td>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>La era de hielo</td>
+                        <td>Animación</td>
+                        <td>A</td>
+                        <td>Español</td>
+                        <td>
+                            <ul>
+                                11:00am <br>
+                                1:00pm <br> 
+                                4:00pm <br>
+                            </ul>
+                        </td>
+                        <td>
+                          
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <aside class="sidebar">
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.197087243085!2d-99.16708772544301!3d19.36061704297712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc0bdd5331d%3A0x96e188ebb2ad7d82!2sCineteca%20Nacional%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1706035462649!5m2!1ses!2smx" 
+        width="400" height="300" style="border: 1px; margin-left: 30px; border-radius:5px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+    </aside>
+    <article class="article">
+        <section class="dulceria">
+            <h2>Dulcería</h2>
+            <table>
+                <thead>
+                    <tr style="background-color:#3B46DC ;">
+                        <th>Artículo</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Palomitas</td>
+                        <td>$65.00</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolates</td>
+                        <td>$15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Nachos</td>
+                        <td>$50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Refresco</td>
+                        <td>$38.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <section class="precios">
+            <h2>Precios</h2>
+            <ul  style="list-style: none;">
+                <li>Niño - $30.00</li>
+                <li>Adultos - $70.00</li>
+                <li>Preferencial - $45.00</li>
+            </ul>
+        </section>
+
+
+    </article>
+    <footer class="footer">
+        <h3>Integrantes</h3>
+        <ul style="list-style: none;">
+            <li>Andrea Cervantes Sosa</li>
+            <li>Jesus Ramses</li>
+            <li>Joshua Ibarra</li>
+            <li>Karina Alejandra Ramos Leyva</li>
+            <li>K. Lizeth Ortiz Muños</li>
+            <li>ollincatl Jiménez Jiménez</li>
+            <li>Sofia Muños</li>
+        </ul>
+    </footer>
+
+</body>
+</html>

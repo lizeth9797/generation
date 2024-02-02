@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+   <style>
+    .principal{
+        background-color: #F15745;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-around;
+    }
+    
+    .caja{
+        background-color: #2E9DC6;
+        text-align: center;
+        margin: 10px;
+        line-height: 200px;
+        width: 200px;
+        height: 200px;
+        color: white;
+        font-size: 70px;
+        font-weight: bold;
+        font-family:'Times New Roman', Times, serif;
+    }
+    
+    /*celular*/
+    .principal{
+        grid-template-columns: auto   ;
+    } 
+    
+    /*tablet*/
+    @media(min-width:768px){
+        .principal{
+            grid-template-columns: auto auto auto ;
+        } 
+    }
+    
+    /*escritorio*/
+    @media(min-width:900px){
+        .principal{
+            grid-template-columns: auto auto auto auto ;
+        } 
+    }
+    
+    
+    
+   </style>
+</head>
+<body>
+
+    <div class="principal">
+        <div class="caja">1</div>
+        <div class="caja">2</div>
+        <div class="caja">3</div>
+        <div class="caja">4</div>
+        <div class="caja">5</div>
+        <div class="caja">6</div>
+        <div class="caja">7</div>
+    </div>
+    
+</body>
+</html>
