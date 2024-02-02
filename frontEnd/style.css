@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+}
+header{
+    background-color: lightcoral;
+    position: fixed; /*Position hace referencia a la posicion de mi elemento y tiene  5 valores fixed, stactic, relative, absolute, sticky. Static y relative actuan igual pero relative si respeta las propiedades que añadamos*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav a {
+    position: relative;
+    font-size: 20px;
+    text-decoration: none; /*para quitar el subrayado de los 'a' */
+    color: aliceblue;
+    margin-left: 40px;
+    font-weight: lighter;
+}
+
+nav a::before{
+    content: ''; /* El content se usa cuando tenemos un Before o After y es para indicar qué contenido va a colocar*/
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: .5s;
+}
+nav a:hover::before{
+    width: 100%; /* va a subrayar el 100% de largo del 'a'anchor */
+}
+
+nav a:hover{ /*pseudo clases user action*/
+    color: black;
+}
+
+article{
+    font-family: 'Honk', system-ui;
+}
+
+.saludo{
+    margin-top: 150px;
+}
+h1 em{  /* el espacio es para aplicar css al descendiente*/
+    color: pink
+}
+
+h1 strong{
+    color: green;
+}
+
+h1 > strong{  /* sólo aplicará a los strong siendo hijos directos  un h1, no si son hijos de hijos*/
+    color: red;
+}
+
+
+.aVideo:link{
+    color:red;
+}
+
+.aVideo:visited{
+    color:green;
+}
+
+/*pseudo elementos se representa con los 2 puntos '::'*/
+p::first-line{
+    background-color: black;
+    color: pink;
+    font-size: 30px;
+}
+
+p::before{
+    content: "🙂";
+}
+
+p::selection{
+    color:gray;
+    background-color: orange;
+}
+
+.pseudo p{
+    font-size: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div p{
+    text-align: center;
+    text-transform: uppercase;
+/*     text-decoration: line-through;*/
+    text-shadow: palevioletred 6px 2px 4px;
+}
+
+
+/*Jerarquía de Especificidad
+
+!important (1,0,0,0,0)
+inline styles (0,1,0,0,0)
+#id (0,0,1,0,0)
+.class (0, 0, 0, 1, 0)
+etiquetas (0, 0, 0, 0, 0)*/
+
+/*Medidas
+-absolutas= px
+-Relativas= em(determinado por el navegador), rem(determinado por el font size)
+-Flexibles= vw, vh, vmin, vmax*/
+

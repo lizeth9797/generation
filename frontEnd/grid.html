@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid ejemplo</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100%;
+        }
+        html{
+            height: 100%;
+        }
+        .grid-container >*{
+            text-align: center;
+            border-radius: 15px;
+            padding: 15px;
+        }
+        .header{
+            grid-area: header;
+            background-color: #FFE5E5;
+        }
+        .navbar{
+            grid-area: navbar;
+            background-color: #E0AED0;
+        }
+        .slide{
+            grid-area: slide;
+            background-color: #AC87C5;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: #756AB6;
+        }
+        .article{
+            grid-area: article;
+            background-color: #E0AED0;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: #756AB6;
+        }
+        img{
+            float:right
+
+        }
+
+        @keyframes cafe {
+            from{
+                opacity: 1;
+            }to{
+                opacity: 0;
+            }
+        }
+        .cafe{
+            animation-name: cafe;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            /*Animation-timing-funcion*/
+
+        }
+
+        /*Tamaño Telefono*/
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            grid-template-areas: 
+            "header"
+            "navbar"
+            "slide" 
+            "sidebar"
+            "article"
+            "footer"
+        ;
+        }
+
+        @media(min-width:768px){
+            .grid-container{
+                grid-template-columns: auto;
+                grid-template-areas: 
+                "header  header"
+                "navbar navbar"
+                "slide slide"
+                "sidebar article"
+                "footer  footer"
+                ;
+            }
+        }
+
+        @media(min-width:900px){
+            .grid-container{
+                grid-template-columns: auto;
+                grid-template-areas: 
+                "header  header header"
+                "navbar navbar navbar"
+                "slide slide slide"
+                "sidebar article article"
+                "footer  footer footer"
+                ;
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body class="grid-container">
+    <header class="header">Header</header>
+    <nav class="navbar">Navbar</nav>
+
+    <div class="slide">Slide</div>
+    <aside class="sidebar"><p><img width="200px" src="https://cdn-3.expansion.mx/dims4/default/3a43bc7/2147483647/strip/true/crop/5760x3840+0+0/resize/1800x1200!/format/webp/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fd3%2Fa1%2Fca36469448dea0b9dde50db5451f%2Fbeneficios-cafe.jpg" alt="cafe">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, sed sapiente? Explicabo quam voluptatum vero distinctio quasi. Fuga earum error, ducimus tempore ut perspiciatis pariatur laudantium facere perferendis, aliquid porro.</p></aside>
+    <article class="article">Articulo</article>
+    <footer class="footer">
+        <img class="cafe" width="100px" height="100px" src="https://suenodeluna.com.mx/cdn/shop/products/Americano.png?v=1662051531&width=1445" alt="cafe"></footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .uno{
+            background-color: paleturquoise;
+            width: 100px;
+            height: 100px;
+        }
+        .dos{
+            background-color: palevioletred;
+            width: 100px;
+            height: 100px;
+        }
+        .tres{
+            background-color: violet;
+            width: 100px;
+            height: 100px;
+        }
+        .tres:hover{
+            cursor: crosshair;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: bisque;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        p{
+            text-align: center;
+            align-items: center;
+            background-color: aqua;
+            padding: 15px;
+            font-size: 25px;
+        }
+        .cuadrado {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin-bottom: 25px;
+            display: block; /* block, inline, inline, inline-block(ancho, alto, padding) */
+          }
+          .box {
+            width: 250px;
+            height: 250px;
+            color: black;
+            background-color: hotpink;
+            border: 25px dashed  violet;
+            padding:50px;
+            box-sizing: border-box; /*Con el box-sizing->border-box hacemos que se ponga en el tamaño que establecimos en width y height, porque cuando agregamos padding y border empieza a tomar otra dimension que no queremos*/
+          }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div class="container">
+        <div class="uno">1</div>
+        <div class="dos">2</div>
+        <div class="tres">3</div>        
+    </div>
+    <h1>Display</h1>
+    <div class="cuadrado"></div>
+    <div class="cuadrado"></div>
+    <div class="cuadrado"></div>
+
+    <p>Hola mundo</p>
+    <p>Hola mundo</p>
+
+    <a href="#">Hola</a>
+    <a href="#">Hola</a>
+
+    <h1>Box sizing</h1>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+</body>
+</html>

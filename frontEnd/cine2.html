@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine</title>
+    <style>
+        
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            min-height: 100%;
+        }
+        html {
+            height: 100%;
+        }
+        
+        .grid-container>*{
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+        }
+        .nombre{
+            grid-area: nombre;
+            background-color: green;
+        }
+        .navegacion {
+            width: 100%;
+            grid-area: navegacion;
+            padding: 0;
+            margin: 0;
+        }
+        .indice{
+            grid-area: indice;
+            background-color: lightgreen;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            padding: 0;
+        }
+        .indice a {
+            margin: 15px 5px 18px 5px;
+            height: 100%;
+        }
+        .cuerpo {
+            grid-area: cuerpo;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background-image: url(https://difusoribero.files.wordpress.com/2021/07/salacine.jpg);
+        }
+        .catalogo{
+            grid-area: carrusel;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .peliculas {
+            grid-area: peliculas;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 30px 10px 30px;
+            justify-content: center;
+        }
+        .precios {
+            grid-area: precios;
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+        }
+        .dulceria {
+            grid-area: dulceria;
+            display: flex;
+            flex-direction: column;
+        }
+        .ubicacion{
+            grid-area: ubicacion;
+        }
+        table {
+            color: greenyellow;
+        }
+        ul {
+            color: greenyellow;
+        }
+        .pie {
+            grid-area: pie;
+            background-color: gray;
+        }
+        /*celular*/
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 10% 5% auto 20%;
+            grid-template-areas:
+            "nombre"
+            "navegacion"
+            "cuerpo"
+            "pie"
+            ;
+        }
+
+        .cuerpo {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-areas: 
+            "carrusel"
+            "peliculas"
+            "precios"
+            "dulceria"
+            "ubicacion"
+            ;
+            }
+
+
+        /*Tablet*/
+        @media(min-width:760px){
+            .grid-container{
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: 10% 5% auto 20%;
+                grid-template-areas:
+                "nombre nombre"
+                "navegacion navegacion"
+                "cuerpo cuerpo"
+                "pie pie"
+                ;
+            }
+
+            .cuerpo {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-areas: 
+                "carrusel carrusel "
+                "peliculas peliculas "
+                "precios dulceria "
+                "ubicacion ubicacion "
+                ;
+            }
+        }
+
+        /*LapTop*/
+        @media(min-width:900px){
+            .grid-container{
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: 10% 5% auto 20%;
+                grid-template-areas:
+                "nombre nombre nombre"
+                "navegacion navegacion navegacion"
+                "cuerpo cuerpo cuerpo"
+                "pie pie pie"
+                ;
+            }
+
+            .cuerpo {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-areas: 
+                "carrusel carrusel carrusel"
+                "peliculas peliculas precios"
+                "peliculas peliculas dulceria"
+                "ubicacion ubicacion ubicacion"
+                ;
+            }
+        }
+        
+    </style>
+</head>
+<body class="grid-container">
+    <Header class="nombre">
+        <h1><a href="ejemplo1.html">Cine</a></h1>
+    </Header>
+    <nav class="navegacion">
+        <div class="indice">
+            <a href="#Peliculas">Películas</a>
+            <a href="#Precios">Precios</a>
+            <a href="#Dulceria">Dulcería</a>
+            <a href="#Ubicacion">Ubicación</a>
+        </div>
+    </nav>
+    <div class="cuerpo">
+        <div class="catalogo">
+            <iframe width="250" height="150" src="https://www.youtube.com/embed/WRrCVyT09ow?si=__yqDa_DMrLVtkUj" title="YouTube video player"
+           frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           <iframe width="250" height="150" src="https://www.youtube.com/embed/2WmsMmEkmfQ?si=UUdpFfNGQrAQfL1w"
+           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+           allowfullscreen></iframe>
+           <iframe width="250" height="150" src="https://www.youtube.com/embed/RI7e1IksKEQ?si=fbHjOkoO9EGCaiWD" title="YouTube video player"
+           frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </tr>
+           </div>
+        <section id="Peliculas" class="peliculas">
+            <h2>Cartelera</h2>
+            <table border="1" style="background-color: black;">
+                <thead>
+                    <tr class="encabezados">
+                        <th>Película</th>
+                        <th>Género</th>
+                        <th>Clasificación</th>
+                        <th>Idioma</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Volver al futuro</td>
+                        <td>Ciencia Ficción</td>
+                        <td>B</td>
+                        <td>Inglés</td>
+                        <td>
+                            <ul>
+                                <li>11:00 am</li>
+                                <li>1:00 pm</li>
+                                <li>4:00 pm</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Soy leyenda</td>
+                        <td>Ciencia Ficción</td>
+                        <td>B</td>
+                        <td>Inglés</td>
+                        <td>
+                            <ul>
+                                <li>1:00 pm</li>
+                                <li>4:00 pm</li>
+                                <li>6:00 pm</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>La era de hielo</td>
+                        <td>Animación</td>
+                        <td>A</td>
+                        <td>Español</td>
+                        <td>
+                            <ul>
+                                <li>8:00 am</li>
+                                <li>11:00 am</li>
+                                <li>1:00 am</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button><a href="./reservar.html">Reservar</a></button>
+        </section>
+        <section id="Precios" class="precios" style="background-color: beige;">
+            <h2 style="color: greenyellow;">Precios</h2>
+            <ul style="list-style: none;">
+                <li>Niño - $30.00</li>
+                <li>Adultos - $70.00</li>
+                <li>Preferencial - $45.00</li>
+            </ul>
+        </section>
+        <section id="Dulceria" class="dulceria" style="background-color: wheat;">
+            <h2 style="color: greenyellow;">Dulcería</h2>
+            <table>
+                <thead>
+                    <tr style="background-color:#3B46DC ;">
+                        <th>Artículo</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Palomitas</td>
+                        <td>$65.00</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolates</td>
+                        <td>$15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Nachos</td>
+                        <td>$50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Refresco</td>
+                        <td>$38.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="Ubicacion" class="ubicacion">
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.197087243085!2d-99.16708772544301!3d19.36061704297712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc0bdd5331d%3A0x96e188ebb2ad7d82!2sCineteca%20Nacional%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1706035462649!5m2!1ses!2smx" 
+            width="400" height="300" style="border: 1px;;margin-left: 30px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </div>
+    <footer class="pie">
+        <h3>Integrantes</h3>
+        <ul style="color: black;">
+            <li>Andrea Cervantes Sosa</li>
+            <li>Jesus Ramses</li>
+            <li>Joshua Ibarra</li>
+            <li>Karina Alejandra Ramos Leyva</li>
+            <li>K. Lizeth Ortiz Muños</li>
+            <li>ollincatl Jiménez Jiménez</li>
+            <li>Sofia Muños</li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/images/iconPrincipal.png" type="image/x-icon">
+    <title>Cine</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .menu {
+            background-color: #737AE1;
+        }
+
+        .navegacion {
+            background-color: #FDAC4F;
+            text-align: center;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        h1 a {
+            text-decoration: none;
+            font-size: 50px;
+            margin: 0;
+        }
+
+        h1 {
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            margin: 0;
+        }
+
+        .encabezados {
+            background-color: #73E19F;
+        }
+
+        button {
+            margin-top: 20px;
+            margin-left: 45%;
+            background-color: rgb(54, 54, 230);
+            width: 100px;
+        }
+
+        button a {
+            color: white;
+        }
+
+        footer {
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="menu">
+        <nav>
+            <h1><a href="ejemplo1.html">Cine</a></h1>
+            <div class="navegacion">
+                <a href="#Peliculas">Películas</a>
+                <a href="#Precios">Precios</a>
+                <a href="#Dulceria">Dulcería</a>
+                <a href="#Ubicacion">Ubicación</a>
+            </div>
+        </nav>
+    </header>
+
+    <img src="https://difusoribero.files.wordpress.com/2021/07/salacine.jpg" alt="" width="100%" height="300px" >
+
+        <section id="Peliculas">
+            <h2>Cartelera</h2>
+            <table border="1">
+                <thead>
+                    <tr class="encabezados">
+                        <th>Película</th>
+                        <th>Género</th>
+                        <th>Clasificación</th>
+                        <th>Idioma</th>
+                        <th>Horario</th>
+                        <th>Trailer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Volver al futuro</td>
+                        <td>Ciencia Ficción</td>
+                        <td>B</td>
+                        <td>Inglés</td>
+                        <td>
+                            <ul>
+                                <li>11:00 am</li>
+                                <li>1:00 pm</li>
+                                <li>4:00 pm</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <iframe width="250" height="150" src="https://www.youtube.com/embed/WRrCVyT09ow?si=__yqDa_DMrLVtkUj" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Soy leyenda</td>
+                        <td>Ciencia Ficción</td>
+                        <td>B</td>
+                        <td>Inglés</td>
+                        <td>
+                            <ul>
+                                <li>1:00 pm</li>
+                                <li>4:00 pm</li>
+                                <li>6:00 pm</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <iframe width="250" height="150" src="https://www.youtube.com/embed/2WmsMmEkmfQ?si=UUdpFfNGQrAQfL1w" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>La era de hielo</td>
+                        <td>Animación</td>
+                        <td>A</td>
+                        <td>Español</td>
+                        <td>
+                            <ul>
+                                <li>8:00 am</li>
+                                <li>11:00 am</li>
+                                <li>1:00 am</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <iframe width="250" height="150" src="https://www.youtube.com/embed/RI7e1IksKEQ?si=fbHjOkoO9EGCaiWD" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </tr>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button><a href="./reservar.html">Reservar</a></button>
+        </section>
+        <section id="Precios">
+            <h2>Precios</h2>
+            <ul>
+                <li>Niño - $30.00</li>
+                <li>Adultos - $70.00</li>
+                <li>Preferencial - $45.00</li>
+            </ul>
+        </section>
+        <section id="Dulceria">
+            <h2>Dulcería</h2>
+            <table>
+                <thead>
+                    <tr style="background-color:#3B46DC ;">
+                        <th>Artículo</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Palomitas</td>
+                        <td>$65.00</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolates</td>
+                        <td>$15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Nachos</td>
+                        <td>$50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Refresco</td>
+                        <td>$38.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="Ubicacion">
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.197087243085!2d-99.16708772544301!3d19.36061704297712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc0bdd5331d%3A0x96e188ebb2ad7d82!2sCineteca%20Nacional%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1706035462649!5m2!1ses!2smx" 
+            width="400" height="300" style="border: 1px;;margin-left: 30px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    <footer>
+        <h3>Integrantes</h3>
+        <ul>
+            <li>Andrea Cervantes Sosa</li>
+            <li>Jesus Ramses</li>
+            <li>Joshua Ibarra</li>
+            <li>Karina Alejandra Ramos Leyva</li>
+            <li>K. Lizeth Ortiz Muños</li>
+            <li>ollincatl Jiménez Jiménez</li>
+            <li>Sofia Muños</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

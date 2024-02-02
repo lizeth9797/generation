@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Reservaciones</h1>
+    <form action="">
+    <fieldset>   <!-- se usa para que los elementos se encasillen en una caja (tendrá contorno) -->
+        <legend>Información Personal</legend>
+        <label for="nombre"><strong>Nombre:</strong></label>
+        <input type="text" id="nombre">
+        <br><br>
+        <label for="edad">Fecha de nacimiento:</label>
+        <input type="date" id="edad">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" required="1" placeholder="Ingresa tu correo">
+        <label for="telefono">Teléfono:</label>
+        <input type="number" id="telefono">
+        
+        <h3>Documentación</h3>
+        <label for="ine">Identificación Oficial</label>
+        <input type="file" id="ine">
+        <label for="comprobante">Comprobante de domicilio</label>
+        <input type="file" id="comprobante">
+        <input type="submit"  id="submit">
+
+        <h3>Elija un producto</h3>  
+         <select name="#" id="#"> <!--colocamos un # para indicar que el nombre estará vacio al igual que el id -->
+            <option value="" disabled selected>Selecciona opción</option>
+            <option value="#">Frappe</option>
+            <option value="#">Te</option>
+            <option value="#">Café</option>
+            <option value="#">Soda Italiana</option>
+          </select>
+
+          <label for="leer">
+            <input type="checkbox"> Confirmar  
+          </label>
+    </fieldset>
+
+          <fieldset>
+            <input type="radio" name="ubicacion"> <!-- Aqui como usamos el mismo name (name="ubicacion"), el navegador sólo permitirá seleccionar una opción de los radio buttom, no más -->
+            <label for="domicilio">Domicilio</label>
+            <input type="radio" name="ubicacion">
+            <label for="restaurante">Restaurante</label>
+         </fieldset>
+
+         <h3>Datalists</h3>
+         <input list="sabores" name="sabor"  style="background-color: pink;">
+         <datalist id="sabores">
+            <option value="chocolate"></option>
+            <option value="Strawberry"></option>
+            <option value="Vanilla"></option>
+         </datalist>
+
+
+        <input type="time" list="popularHours" />
+        <datalist id="popularHours">
+            <option value="12:00"></option>
+            <option value="13:00"></option>
+            <option value="14:00"></option>
+        </datalist>
+
+         <h4>Extras</h4>
+         <label for="color">Elige un color</label>
+         <input type="color">
+         <label for="colors">Color con datalist:</label>
+        <input type="color" list="redColors" id="colors" />
+        <datalist id="redColors">
+            <option value="#800000"></option>
+            <option value="#8B0000"></option>
+            <option value="#A52A2A"></option>
+            <option value="#DC143C"></option>
+        </datalist>
+        <br><br>
+         <label for="horario">Elige un horario</label>
+         <input type="time">
+         <br><br>
+         <label for="progreso">Progreso sin definicion</label>
+         <progress></progress>
+         <label for="progreso2">Progreso del 70%</label>
+         <progress min="1" max="100" value="70"></progress>
+         <br><br>
+         <label for="rango">Rango:</label>
+         <input type="range">
+
+        <label for="rango2">Rango con datalist</label>
+        <input type="range" list="tickmarks" min="0" max="100" id="rango2" name="rango2" />
+        <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+        </datalist>
+    </form>
+
+
+</body>
+</html>
