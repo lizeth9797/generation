@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <style>
+        .container {
+          position: relative;
+          width: 50%;
+        }
+        
+        .image {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+        
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: 1s ease;
+        }
+        
+        .container:hover .overlay {
+          opacity: 1;
+        }
+        
+        .text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100%; /*ocupará el 100% del ancho del div overlay*/
+          /*se define 3 veces para confirmar que aplique para 'todos' los navegadores*/
+          -webkit-transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+        .us{
+            background-color: aquamarine;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            
+        }
+        </style>
+</head>
+<body>
+
+    
+    <h2>Fade in Overlay</h2>
+    <p>Hover over the image to see the effect.</p>
+
+    <div class="us">
+        <div class="container">
+            <img src="https://d28w2s5u3j4b6n.cloudfront.net/baby_quip_modern/img/img-team-joe-maier.jpg?v=500" alt="Avatar" class="image">
+            <div class="overlay">
+                <img src="https://d28w2s5u3j4b6n.cloudfront.net/baby_quip_modern/img/img-team-child-joe.jpg?v=500" alt="Avatar" class="text">
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="https://d28w2s5u3j4b6n.cloudfront.net/baby_quip_modern/img/img-team-joe-maier.jpg?v=500" alt="Avatar" class="image">
+            <div class="overlay">
+                <img src="https://d28w2s5u3j4b6n.cloudfront.net/baby_quip_modern/img/img-team-child-joe.jpg?v=500" alt="Avatar" class="text">
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="https://d28w2s5u3j4b6n.cloudfront.net/baby_quip_modern/img/img-team-joe-maier.jpg?v=500" alt="Avatar" class="image">
+            <div class="overlay">
+                <img src="https://d28w2s5u3j4b6n.cloudfront.net/baby_quip_modern/img/img-team-child-joe.jpg?v=500" alt="Avatar" class="text">
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="https://d28w2s5u3j4b6n.cloudfront.net/baby_quip_modern/img/img-team-joe-maier.jpg?v=500" alt="Avatar" class="image">
+            <div class="overlay">
+                <img src="https://d28w2s5u3j4b6n.cloudfront.net/baby_quip_modern/img/img-team-child-joe.jpg?v=500" alt="Avatar" class="text">
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="https://d28w2s5u3j4b6n.cloudfront.net/baby_quip_modern/img/img-team-joe-maier.jpg?v=500" alt="Avatar" class="image">
+            <div class="overlay">
+                <img src="https://d28w2s5u3j4b6n.cloudfront.net/baby_quip_modern/img/img-team-child-joe.jpg?v=500" alt="Avatar" class="text">
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="https://d28w2s5u3j4b6n.cloudfront.net/baby_quip_modern/img/img-team-joe-maier.jpg?v=500" alt="Avatar" class="image">
+            <div class="overlay">
+                <img src="https://d28w2s5u3j4b6n.cloudfront.net/baby_quip_modern/img/img-team-child-joe.jpg?v=500" alt="Avatar" class="text">
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    
+</body>
+</html>
