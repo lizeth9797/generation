@@ -179,7 +179,63 @@
         <button type="button" class="btn btn-primary" id="btnSubmit4">Submit</button>
     </form>   
     <br><br>
+    <h1>Challenge Yourself</h1>
+    <p>A teacher wants to create a rubric for grading. The rubric is from 0 - 11. <br> <strong>Part 1</strong> A student passes if they have a score greater than or equal to 5. Create a function that returns a boolean true or false. <br> <strong>Part 2</strong> A student has an excellent grade if they score higher than 8. Add on to your function to print out "Excellent" for scores greater than 8 <br> <strong>Part 3</strong> A student has a perfect grade if their score is 11. Add on to your function to print out "Perfect" for a score of 11.</p>
+    <form>
+        <div class="mb-3">
+          <label for="school" class="form-label">Enter the score:</label>
+          <input type="number" class="form-control" id="score">
+        </div>
+        <button type="button" class="btn btn-primary" id="btnSubmit5">Submit</button>
+    </form>    
+    <br><br>
+    <h1>JS-03 Control Flow</h1>
+    <h3>Business hours</h3>
+    <main class="container">
+    <form>
+        <div class="mb-3">
+          <label for="calendar" class="form-label">Enter the day number [0-6]:</label>
+          <input type="number" class="form-control" id="dayNumber">
+          <label for="calendar" class="form-label">Enter the hour[0-23]:</label>
+          <input type="number" class="form-control" id="hourNumber">
+        </div>
+        <button type="button" class="btn btn-primary" id="btnSubmit6">Submit</button>
+    </form>  
+    <br>
+    <p><strong>is it business hour?</strong></p>
+    <div class="alert alert-success" role="alert" id="bhResultado"></div>
+  </main>
 
+    <h3>part 2</h3>
+    <main class="container">
+      <form>
+          <div class="mb-3">
+            <label for="dayNum" class="form-label">Enter the day number of January 1st [0-6]:</label>
+            <input type="number" class="form-control" id="janFirstDayNumber" min="0" max="6">
+            <label for="dayNum" class="form-label">Enter the year day number[0-365]:</label>
+            <input type="number" class="form-control" id="yearDayNumber" min="0" max="365">
+          </div>
+          <button type="button" class="btn btn-primary" id="btnSubmit7">Submit</button>
+      </form>  
+      <br>
+      <div class="alert alert-success" role="alert" id="dayResultado"></div>
+    </main>
+
+    <h3>part 3</h3>
+    <main class="container">
+      <form>
+          <div class="mb-3">
+            <label for="bsDay" class="form-label">Enter the year day number[0-365]:</label>
+            <input type="number" class="form-control" id="yearDayNumber2" min="0" max="6">
+            <label for="bsDay" class="form-label">Enter the hour[0-23]:</label>
+            <input type="number" class="form-control" id="hourNumber2">
+          </div>
+          <p>No es necesario introducir valores, se ha actualizado la funcionalidad con el CHALLENGE (la hr y día se tomarán del sistema)</p>
+          <button type="button" class="btn btn-primary" id="btnSubmit8">Submit</button>
+      </form>  
+      <br>
+      <div class="alert alert-success" role="alert" id="bHourandDay"></div>
+    </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
