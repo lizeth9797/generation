@@ -156,6 +156,12 @@ btnSubmit8.addEventListener("click",function(evento){
     let firstDayNumber=newfecha.getDay();
     let currentyearDay=fecha.getDay();
     console.log("currentyearDay: ",currentyearDay);
+    /*Opción de JC:
+    let fecha=new Date();
+    fecha.setDate(1); //día 1
+    fecha.setMonth(0) //mes 0
+    let dia=getDayNumber(fecha.getDay(),currentyearDay); 
+    */
     let dia=getDayNumber(firstDayNumber,currentyearDay); 
     //bHourandDay.innerHTML=businessHours(dia,parseInt(hourNumber2.value));
 
