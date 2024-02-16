@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+      .card .card-body p {
+        background-color: #DDD3C5;
+        text-align: justify;
+        color: #7E5A6E;
+        font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 20px;
+    }
+
+    .card-text{
+      min-height: 20vh;
+    }
+
+    .card-title{
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 25px;
+      color: #7E5A6E;
+      /*float: right; 
+      margin-top: 150px;*/
+      text-align: right;
+    }
+
+    .card{
+      background-image: url(./src/nosotros/fondo1.png);
+      background-size: cover;
+    }
+
+    .card-img-top{
+      width: 50%; 
+      margin-left:25%
+    }
+
+    /*img:hover {filter: opacity(0);        transition: 1s ease;
+
+    }*/
+
+    .imagen{
+      position: relative;
+    }
+
+    .firstImage, .secondImage{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    
+    .firstImage{
+      z-index:1;
+    }
+
+    .firstImage:hover{
+      filter: opacity(0);        
+      transition: 1s ease;
+    }
+
+    .card-body{
+      margin-top: 700px;
+    }
+
+
+    /*celulares*/
+    @media(min-width:576px){ /*Con este min decimos que de 576 a 767 tendrá este formato*/
+        .card-body {
+            margin-top: 200px;
+        }
+        .card-text {
+          min-height: 12vh;
+        }
+    }
+    @media(max-width:600px){  /*Con este maximo decimos que desde el mas pequeño hasta los 600px se respeta esta condición*/
+      .card-body {
+          margin-top: 200px;
+      }
+      .card-text {
+        min-height: 12vh;
+      }
+    }
+    /*tablet*/
+    @media(min-width:768px){
+      .card-body {
+          margin-top: 130px;
+      }
+      .card-text {
+        min-height: 18vh;
+      }
+    }
+    /*escritorio*/
+    @media(min-width:992px){
+      .card-body {
+          margin-top: 180px;
+      }
+      .card-text {
+        min-height: 12vh;
+      }
+    }
+
+    /*escritorio L*/
+    @media(min-width:1440px){
+      .card-body {
+          margin-top: 250px;
+      }
+      .card-text {
+        min-height: 10vh;
+      }
+    }
+
+     /*escritorio 4k*/
+     @media(min-width:2560px){
+      .card-body {
+          margin-top: 450px;
+      }
+      .card-text {
+        min-height: 7vh;
+      }
+    }
+    </style>
+
+  </head>
+
+  <body>
+    <h1 style="text-align: center; color: #7E5A6E;" >Integrantes</h1>
+    <br>
+    <br>
+    
+
+    <div class="card text-bg-dark">
+      <img src="./src/img/banner.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h1  class="card-title" style="font-size: 40px; text-align: center;">¿Qué es Manahuia?</h1>
+        <br>
+        <p class="card-text" style="color: #7E5A6E; font-size: 30px; text-align: center;">El proyecto aborda los desafíos que enfrentan las mujeres en el turismo en México, destacando la violencia de género y la inseguridad durante los viajes.
+          La solución propuesta es una aplicación web que conecta a mujeres en el sector turístico, buscando no solo abordar la disparidad económica, 
+          sino también ofrecer información sobre destinos seguros. El objetivo es promover experiencias turísticas positivas y seguras, 
+          transformando la industria en un espacio inclusivo y respetuoso de género.</p>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <div class="imagen">
+          <img src="./src/img/Liz_blanco OK.png" class="card-img-top firstImage" alt="info-chayo" >
+          <img src="./src/img/Liz_vacaciones OK.png" class="card-img-top secondImage" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Chayo Orozco</h5>
+            <p class="card-text">Pedagoga y estudiante en ingeniera en sistemas computacionales con experiencia en desarrollo de automatización de procesos y manejo de CRM. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="imagen card">
+          <img src="./src/img/Liz_blanco OK.png" class="card-img-top firstImage" alt="...">
+          <img src="./src/img/Liz_vacaciones OK.png" class="card-img-top secondImage" alt="...">
+           </div>
+          <div class="card-body">
+            
+            <h5 class="card-title">Sinthya Bermudez</h5>
+            <p class="card-text">Desarrolladora Java Full Stack Junior e Ingeniera en Comunicaciones y Electrónica, apasionada por el desarrollo web y la innovación tecnológica.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="imagen">
+          <img src="./src/img/Liz_blanco OK.png" class="card-img-top firstImage" alt="...">
+          <img src="./src/img/Liz_vacaciones OK.png" class="card-img-top secondImage" alt="...">
+        </div>
+          <div class="card-body">
+            
+            <h5 class="card-title">Abigail Arizmendi</h5>
+            <p class="card-text">Desarrolladora Java Full Stack y Data Analyst con amplio conocimiento de lenguajes de programación y experiencia en revisión y manejo de bases de datos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="imagen">
+          <img src="./src/img/Liz_blanco OK.png" class="card-img-top firstImage" alt="...">
+          <img src="./src/img/Liz_vacaciones OK.png" class="card-img-top secondImage" alt="...">
+        </div>
+          <div class="card-body">
+            
+            <h5 class="card-title">Lizeth Muñoz</h5>
+            <p class="card-text">Desarrolladora Full Stack con más de seis años de experiencia en el sector Fintech, destacando en el área de seguridad y pruebas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="imagen">
+          <img src="./src/img/Liz_blanco OK.png" class="card-img-top firstImage" alt="...">
+          <img src="./src/img/Liz_vacaciones OK.png" class="card-img-top secondImage" alt="...">
+        </div>
+          <div class="card-body">
+            
+            <h5 class="card-title">Dita Fernández</h5>
+            <p class="card-text">Instructora educativa y coordinadora de proyectos con más de 7 años de experiencia, desarrolladora Full Stack, Cloud Practitioner y estudiante de Ciencias de Datos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="imagen">
+          <img src="./src/img/Liz_blanco OK.png" class="card-img-top firstImage" alt="...">
+          <img src="./src/img/Liz_vacaciones OK.png" class="card-img-top secondImage" alt="...">
+        </div>
+          <div class="card-body">
+            
+            <h5 class="card-title">Jos Mendoza</h5>
+            <p class="card-text">Desarrollador Full Stack Java Developer Junior, con origen de experiencia en programación en lenguaje C# enfocado en videojuegos. Amante de los videojuegos y la tecnología.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="imagen">
+          <img src="./src/img/Liz_blanco OK.png" class="card-img-top firstImage" alt="...">
+          <img src="./src/img/Liz_vacaciones OK.png" class="card-img-top secondImage" alt="...">
+        </div>
+          <div class="card-body">
+            
+            <h5 class="card-title">Sofi Muñoz</h5>
+            <p class="card-text">diseñadora con 6 años de experiencia en diferentes ramas, desarrolladora Full Stack Java Developer Junior, con interés en la animación y concept art para videojuegos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+
+  </body>
+</html>
