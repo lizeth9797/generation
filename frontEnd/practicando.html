@@ -56,7 +56,7 @@
         }
         .grid-container{
             display: grid;
-            grid-template: 300px 500px / 1fr 2fr;
+            grid-template: 300px 500px / 1fr 2fr;  /*filas y columnas*/
         }
 
 
@@ -67,11 +67,17 @@
             .section1{
                 flex-direction: column;
             } 
+            .video1{
+                max-width: 85%;
+            }
         }
         @media(max-width:600px){  /*Con este maximo decimos que desde el mas pequeño hasta los 600px se respeta esta condición*/
             .section1{
                 flex-direction: column;
             } 
+            .video1{
+                max-width: 85%;
+            }
         }
         /*tablet*/
         @media(min-width:768px){
