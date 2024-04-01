@@ -14,7 +14,7 @@ function getData(){
 }
 
 function createCards(prods){
-    //console.log(prods);
+    console.log(prods);
     prods.forEach(p => {
         //console.log(p);
         container.insertAdjacentHTML("beforeend",
